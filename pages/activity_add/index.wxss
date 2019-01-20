@@ -1,0 +1,43 @@
+
+page{
+  background: #efeff4;
+  color: #38383d;
+  font-size: 32rpx;
+  } 
+.page-section{
+  width: 100%;
+  margin-top: 0rpx;
+  padding-bottom: 30rpx;
+}
+.my_flex{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rich-text-wrp{
+    padding-left:32rpx;
+    border-bottom: 1px solid #f2f2f2;
+    background-color:#fff;
+    line-height:80rpx;
+}
+.run{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+
+}
+.my_flexR{
+  position:absolute;
+   right:48rpx;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  max-width:230px;
+  min-width: 200rpx;
+  text-align: right;
+  overflow:hidden;
+}
+
+.my_flexImg{
+  position:absolute;
+  right:16rpx;
+}

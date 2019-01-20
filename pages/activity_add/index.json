@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "DateTimePicker": "/components/DateTimePicker/index"
+  },
+  "navigationBarTitleText": "DateTimePicker"
+}

@@ -1,0 +1,45 @@
+/* 模态框开始 */
+/* 蒙层 */
+.modelboxbg{
+  position:absolute;
+  top:0;
+  z-index:10000;
+  width:100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+}
+.modelbox{
+  position:absolute;
+  bottom:0;
+  z-index:999999;
+  width:100%;
+  background: #fff;
+}
+picker-view-column{
+  text-align: center;
+}
+view.model_picker{
+  position: relative;
+}
+.button_model{
+  height: 80rpx;
+  width: 100%;
+  background: #fff;
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+}
+.button_model text{
+    color: #007aff;
+    position: absolute;
+    background:transparent;
+    border: none;
+    line-height: 80rpx;
+}
+.button_model text:first-child{
+  left: 32rpx;
+}
+.button_model text:last-child{
+  right: 32rpx;
+}
+/* 模态框结束 */

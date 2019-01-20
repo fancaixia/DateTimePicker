@@ -1,0 +1,44 @@
+<!-- 组件模板 -->
+<view class="wrapper">
+
+  <slot></slot>
+    <view >{{title}}</view>
+
+    <!-- 日期模态框 -->
+  <view class="modelboxbg"></view>
+  <view class="modelbox">
+    <view class = "model_picker">
+         <view class = "button_model">
+            <text catchtap='canslebtn' >取消</text>
+            <text catchtap='closebtn' >确定</text>
+            </view>
+          <view class = "cont_model">
+            <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{timevalue}}" catchchange="fnbindChange">
+            <!-- 年 -->
+              <picker-view-column wx:if="{{years.length > 0}}">
+                <view wx:for="{{years}}" wx:key="{{index}}" style="line-height: 50px">{{item}}</view>
+              </picker-view-column>
+              <!-- 月 -->
+              <picker-view-column wx:if="{{months.length > 0}}">
+                <view wx:for="{{months}}" wx:key="{{index}}" style="line-height: 50px">{{item}}</view>
+              </picker-view-column>
+              <!-- 日 -->
+              <picker-view-column wx:if="{{days.length > 0}}">
+                <view wx:for="{{days}}" wx:key="{{index}}" style="line-height: 50px">{{item}}</view>
+              </picker-view-column>
+              <!-- 时 -->
+              <picker-view-column wx:if="{{hours.length > 0}}">
+                <view wx:for="{{hours}}" wx:key="{{index}}" style="line-height: 50px">{{item}}</view>
+              </picker-view-column>
+              <!-- 分 -->
+              <picker-view-column wx:if="{{minutes.length > 0}}">
+                <view wx:for="{{minutes}}" wx:key="{{index}}" style="line-height: 50px">{{item}}</view>
+              </picker-view-column>
+            </picker-view>
+          </view>
+   
+   </view>  
+  </view>
+
+   
+</view>
